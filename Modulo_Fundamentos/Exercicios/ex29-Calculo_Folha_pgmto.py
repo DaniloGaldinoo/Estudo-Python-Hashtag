@@ -22,7 +22,7 @@ Salário Liquido                 : R$  935,00
 while True:
 
     print('=-'*20)
-    print(f'{'CALCULO FOLHA DE PAGAMENTO':^40}')
+    print(f'{"CALCULO FOLHA DE PAGAMENTO":^40}')
     print('=-'*20)
 
     hr = float(input('| Insira o valor da hora trabalhada: '))
@@ -30,29 +30,30 @@ while True:
     sal = hr * qtdhr
     if sal <= 900:
         ir = 0
+        perc = '0%'
     elif sal > 900 and sal <= 1500:
         ir = 0.05
+        perc = '5%'
     elif sal > 1500 and sal <= 2500:
         ir = 0.10
+        perc = '10%'
     else:
         ir = 0.20
+        perc = '20%'
 
     inss = sal*0.10
+    valor_ir = sal * ir
+    total_desc = valor_ir + inss
+    sal_liquido = sal - valor_ir - inss
+    fgts = sal * 0.11
 
     print(f'\n\nRELATORIO\n')
-    print(f'Salario Bruto: ({hr}*{qtdhr}):    R$:'{sal})
-    print(f'(-) IR ({ir}):        R$:'{sal*ir})
-    print(f'(-) INSS (10%):        R$:'{sal*0.10})
-    print(f'FGTS (11%):        R$:'{sal*0.11})
-    print(f'Total de descontos: R$:{ir+inss}')
-    print(f'Salario Liquido: R$: {sal-ir-inss}')
-
-
-
-
-
-
-
+    print(f'Salario Bruto: ({hr}*{qtdhr}):    R$:{sal:.2f}')
+    print(f'(-) IR ({perc}):        R$:{valor_ir:.2f}')
+    print(f'(-) INSS (10%):        R$:{inss:.2f}')
+    print(f'FGTS (11%):        R$:{fgts:.2f}')
+    print(f'Total de descontos: R$:{total_desc:.2f}')
+    print(f'Salario Liquido: R$: {sal_liquido:.2f}')
 
     cont = input('Deseja calcular novamente? [S/N]: ').strip().upper()
 
