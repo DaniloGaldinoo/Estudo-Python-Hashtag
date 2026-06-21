@@ -23,13 +23,17 @@ if maca <= 5:
 else:
     vlrmaca = 1.50
 
-vlrtotal = vlrmorango + vlrmaca
+totmorango = morango * vlrmorango
+totmaca = maca * vlrmaca
+vlrtotal = totmorango + totmaca
 
-if totkg > 8 and vlrtotal > 25:
+if totkg > 8 or vlrtotal > 25:
     desc = vlrtotal * 0.10
-    novoval = vlrtotal - desc
+    totcomdesc = vlrtotal - desc
+    print(f'A maçã deu um total de R$:{totmaca}')
+    print(f'O morango deu um total de R$:{totmorango}')
+    print(f'O valor a ser pago é de R$: {totcomdesc}, com uma quantidade total de {totkg}')
 else:
-    novoval = vlrtotal
-
-
-print(f'O valor a ser pago é de R$: {vlrtotal}')
+    print(f'A maçã deu um total de R$:{totmaca}')
+    print(f'O morango deu um total de R$:{totmorango}')
+    print(f'O valor a ser pago é de R$: {vlrtotal}, com uma quantidade total de {totkg}')
