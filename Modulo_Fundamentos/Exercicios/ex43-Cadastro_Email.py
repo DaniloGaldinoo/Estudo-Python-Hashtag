@@ -16,3 +16,22 @@ Você pode testar o que ele dá como resposta caso ele não encontre um item den
 '''
 
 nome = input('Insira seu nome: ').strip()
+email = input('Informe seu e-mail: ').strip().lower()
+
+# Verifica se nome e e-mail foram preenchidos
+if nome == '' or email == '':
+    print('Preencha todos os dados corretamente.')
+
+else:
+    posicao_arroba = email.find('@')
+
+    # Verifica se existe @
+    if posicao_arroba == -1:
+        print('E-mail inválido.')
+
+    else:
+        # Procura um ponto somente depois do @
+        if '.' in email[posicao_arroba:]:
+            print(f'{email} é um e-mail válido.')
+        else:
+            print('E-mail inválido.')
