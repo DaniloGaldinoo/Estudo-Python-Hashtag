@@ -22,7 +22,7 @@ while len(nome) <= 3:
 print('Inserido com sucesso.')
 
 while idade < 0 or idade > 150:
-    idade = input('Insira a idade: ')
+    idade = int(input('Insira a idade: '))
 
     if idade < 0 or idade > 150:
         print('Idade incorreta.\nInsira novamente.')
