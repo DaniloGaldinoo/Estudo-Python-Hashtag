@@ -18,4 +18,4 @@ for nome, vendas2019, vendas2020 in vendas_produtos:
         print(f'{nome} vendeu em 2019 um total de {vendas2019} e em 2020 vendeu um total de {vendas2020}! Sendo assim, obtivemos um crescimento de {vendas2020/vendas2019 - 1:.2%}\n')
     else:
         print(f'{nome} vendeu em 2019 um total de {vendas2019} e em 2020 vendeu um total de {vendas2020}! Sendo assim, obtivemos uma queda de {abs(vendas2020/vendas2019 - 1):.2%}\n')
-        
+    
