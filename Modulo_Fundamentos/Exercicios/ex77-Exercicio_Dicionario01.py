@@ -45,6 +45,6 @@ niveis_co2 = {
 
 for estado in niveis_co2:
     valores_sensores = niveis_co2[estado]
-    media = sum(valores_sensores) / 5
+    media = sum(valores_sensores) / len(niveis_co2[estado])
     if media > 450:
         print(f'{estado} está com niveis altissimos de CO2 ({media:.1f}), chamar equipe especializada para verifivar a região.')
