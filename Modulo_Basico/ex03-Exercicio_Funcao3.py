@@ -31,3 +31,5 @@ def identificador_inadimplente(devedores):
 lista_inadimplentes = identificador_inadimplente(clientes_devedores)
 print(f'Lista com os clientes inadimplentes pronta para envio!')
 print(f'Segue para conferencia:{lista_inadimplentes}')
+
+#Continuar depois
