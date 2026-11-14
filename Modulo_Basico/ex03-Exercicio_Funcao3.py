@@ -18,7 +18,7 @@ clientes_devedores = [('462.286.561-65',14405,24),('251.569.170-81',16027,1),('2
 def identificador_inadimplente(devedores):
     inadimplentes = []
 
-    for cliente in clientes_devedores:
+    for cliente in devedores:
 
         cpf = cliente[0]
         valor_devido = cliente[1]
@@ -30,6 +30,6 @@ def identificador_inadimplente(devedores):
 
 lista_inadimplentes = identificador_inadimplente(clientes_devedores)
 print(f'Lista com os clientes inadimplentes pronta para envio!')
-print(f'Segue para conferencia:{lista_inadimplentes}')
 
-#Continuar depois
+for i, cpf in enumerate(lista_inadimplentes):    #Aqui eu usei um enumerate para numerar e organizar o print em cpf por linha e saber com mais exatidao a qtd de clientes! Tambem isei o start=1 para a contagem começar do 1 e não do 0
+    print(f'{i} - {cpf}')
