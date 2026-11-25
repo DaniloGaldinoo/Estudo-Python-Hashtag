@@ -1,0 +1,112 @@
+Cadastro
+    Clientes
+        *Botoes* - Novo | Pesquisar | Limpar | Excluir | Gravar | Bloquear credito | Sair
+
+        Codigo:
+        Nome:
+        Fone:
+        Data do cadastro:
+        Valor devido:
+        Limite devedor:
+
+    Empresa
+        #Aqui são as infos da empresa, no caso o mercado.
+        *Botoes* Gravar | Sair
+
+        Nome Empresa:
+        Endereço:
+        Bairro:
+        Cidade:
+        UF:
+        CEP:
+        Email:
+        CNPJ:
+        Fone:
+
+    Fornecedores
+        *Botoes* Novo | Pesquisar | Limpar | Excluir | Gravar | Sair
+        
+        Razao Social:
+        Grupo: 
+
+    Condições de Pagamento
+        Debito
+        Credito
+        Dinheiro
+        Pix
+        Crediario ou Fiado
+
+    Produtos
+        *Botoes* Novo | Pesquisar | Limpar | Excluir | Gravar | Sair
+
+        Cod. Interno:
+        Data de atualização:
+        Descrição:
+        Preço de custo:
+        % Lucro:
+        Preço de Venda:
+        Qtde Minima: #Para usar para fazer uma lista de oque precisa repor
+        Fornecedor:
+        Unidade de Medida:
+        Qtde no estoque:
+        Adicionar Imagem: #Para aparecer na tela de venda
+
+Consultas
+    Pedidos
+        *Botoes* Pesquisar | Limpar | Imprimir | Excluir | Sair
+
+        Data de emissao:
+        N do pedido:
+        Cliente
+        #Descrição da consulta
+
+Movimentação
+
+
+Financeiro
+    Contas a Pagar
+        *Botoes* Novo | Pesquisar | Limpar | Excluir | Gravar | Baixar | Relatorio | Sair
+        Data:
+        Qtd de parcelas:
+        Saldo:
+        Fornecedor:
+        Valor:
+        Data Baixa:
+
+        #Gostaria de poder listar os pendentes/pagos/vencidos e por fornecedor
+
+
+    Contas a Receber
+        #Basicamente igual o contas a pagar, mas com os fiados
+
+    Fluxo de caixa
+
+Relatórios
+    Cadastros
+    Financeiro
+    Estoque 
+        Saldo
+        Minimo
+        Produtos em falta
+    Etiquetas Produtos
+        #Gerar etiquetas de produtos selecionados
+    Vendas
+    Compras
+
+Utilitarios
+    Registro    
+        #Para registrar o programa depois que eu tranformar ele em um produto e conseguir vender
+    Backup
+        #para backup dos produtos e todas as infos, podendo escolher se quer levar ou nao as fotos dos produtos junto
+    Restaurar Banco de dados
+        #redefinição ed fabrica
+    Manutenção de arquivos
+    Troca Senha
+    Controle de Acesso
+    Limpar banco de dados
+
+Sobre
+    Infos
+
+Ajuda
+    Documentação
